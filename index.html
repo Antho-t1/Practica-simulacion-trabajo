@@ -11,15 +11,15 @@
     <h1>Practica Git</h1>
     <p>Esta es una practica de Git</p>
 
-    <button id="botonMagico">Haz clic aquí</button>
-    <p id="mensaje">Esperando interacción...</p>
+    <button id="botonMagico">Probar interacción</button>
+<p id="mensaje">Presiona el botón para verificar que JavaScript responde.</p>
 
     <script>
         const boton = document.getElementById('botonMagico');
         const mensaje = document.getElementById('mensaje');
 
         boton.addEventListener('click', () => {
-            mensaje.innerText = "¡JavaScript está funcionando!";
+            mensaje.innerText = "Interacción detectada correctamente desde el botón.";
         });
     </script>
 </body>
