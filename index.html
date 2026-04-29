@@ -5,13 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica Git</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+
+        }
+
+        #botonMagico {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        #botonMagico:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Practica Git</h1>
-    <p>Esta es una practica de Git</p>
+    <p>Ejercicio de Git Basico</p>
 
-    <button id="botonMagico">Haz clic aquí</button>
+    <button id="botonMagico">Listo para comenzar la prueba</button>
     <p id="mensaje">Esperando interacción...</p>
 
     <script>
@@ -19,7 +46,10 @@
         const mensaje = document.getElementById('mensaje');
 
         boton.addEventListener('click', () => {
-            mensaje.innerText = "¡JavaScript está funcionando!";
+            mensaje.innerText = "¡Cambio registrado! Has modificado el estado de la página mediante un script.";
+            mensaje.style.color = "#27ae60";
+            mensaje.style.fontWeight = "bold";
+
         });
     </script>
 </body>
